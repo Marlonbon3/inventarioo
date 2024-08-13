@@ -1,0 +1,45 @@
+/* Estilo para el contenedor del gráfico */
+.chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el título del gráfico */
+.chart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40; /* Color de texto oscuro */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+}
+
+/* Estilo para el canvas del gráfico */
+.chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Mensajes de carga y error */
+.chart-container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #6c757d; /* Color de texto gris */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 576px) {
+    .chart-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .chart-container h2 {
+        font-size: 1.2em;
+    }
+}

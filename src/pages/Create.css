@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* Colores personalizados */
+:root {
+  --background: #e0e0e0;
+  --primary: #34495e;
+  --accent: #1abc9c;
+  --text-primary: #2c3e50;
+  --card-bg: #ffffff;
+  --border: #bdc3c7;
+  --input-bg: #ffffff;
+  --input-border: #95a5a6;
+}
+
+/* Estilo general */
+body {
+  background-color: var(--background);
+  font-family: 'Arial', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 500px;
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Estilo del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--accent);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: darken(var(--accent), 10%);
+  transform: scale(1.05);
+}
+

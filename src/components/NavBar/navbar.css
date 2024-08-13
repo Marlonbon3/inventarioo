@@ -1,0 +1,44 @@
+.nav-container{
+    width: 30%;
+}/* Estilos generales para la barra de navegación */
+.navbar-container {
+    background-color: #ffffff; /* Color de fondo oscuro */
+    border-bottom: 1px solid #ffffff; /* Línea inferior sutil */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Tamaño de fuente más grande para el nombre */
+    font-weight: bold; /* Fuente en negrita */
+    color: #ffffff; /* Color del texto */
+}
+
+.nav-container {
+    display: flex;
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto en el enlace */
+}
+
+.nav-link {
+    color: #ffffff; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 1rem; /* Tamaño de fuente */
+    padding: 10px 15px; /* Espaciado interno para mayor área clickeable */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el fondo y color */
+}
+
+/* Efecto de hover para los enlaces de navegación */
+.nav-link:hover {
+    background-color: #495057; /* Fondo al pasar el cursor sobre el enlace */
+    color: #f8f9fa; /* Color del texto al pasar el cursor */
+}
+
+/* Estilo para el contenedor fluido */
+.container-fluid {
+    padding-left: 2rem; /* Espacio a la izquierda */
+    padding-right: 2rem; /* Espacio a la derecha */
+}
